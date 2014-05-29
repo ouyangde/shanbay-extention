@@ -1,0 +1,92 @@
+input.smallInput{
+	border:1px solid black;FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 24px; LINE-HEIGHT: normal; color: #EC5800
+	}
+#maintable{
+word-break:keep-all;
+word-wrap: break-all;
+}
+#foot{
+font-size:10px;
+float:right;
+bottom: 0px;
+right: 0px;
+}
+.wd {
+color : #ec5800;
+font-size : 1.5em;
+font-weight : 700;
+}
+#content {
+position : relative;
+background : #fff;
+float : left;
+font : 12px/162% Arial, Helvetica, sans-serif;
+font-size : 14px;
+width : 240px;
+border : none;
+word-break:break-all;
+}
+.prn {
+color : #222;
+font-family : Segoe UI, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+font-size : 0.8em;
+font-weight : 400;
+}
+body {
+font-family : normal Arial, Helvetica, sans-serif;
+color : #444;
+font-size : 12px;
+min-width:230px;
+margin-bottom:0px;
+margin-right:0px
+}
+
+.definition, .exnt li, .ex li, #user-ex li, .nt li, .userexnt li {
+position : relative;
+font-size : 12px;
+line-height : 16px;
+}
+#exreview-dialog .cnex, .content, .visible, #exnt .note .info, #user_exnt_box li .note {
+display : block;
+}
+
+input[type="button"] {
+min-width : 4em;
+height : 24px;
+margin-right : 6px;
+background-color : #209e85;
+line-height : 24px;
+text-align : center;
+font-size : 12px;
+font-weight : 700;
+color : #fff;
+cursor : pointer;
+border-color : #9c0 #390 #390 #9c0;
+border-style : solid;
+border-width : 1px;
+}
+
+.highlight {
+color: #EC5800;
+}
+a {
+color: #369;
+}
+#ubar a {
+font-size: 13px;
+float:left;
+padding-bottom: 2px;
+}
+#logo {
+padding: 1px 1px 7px 1px;
+border-bottom: 1px solid lightgray;
+}
+textarea.raw {
+color: #CCC;
+}
+#exerr {
+color: #E11;
+float:left;
+font-size: 12px;
+padding-bottom: 2px;
+}

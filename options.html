@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="options.js"></script>
+<style type="text/css">
+div#wrapper,div#wrapper div {
+	margin-left: 40px;
+	margin-top: 5px;
+}
+
+div#wrapper div.engine {
+	margin-top: 20px;
+}
+
+div#wrapper label,div#wrapper input {
+	cursor: pointer;
+}
+</style>
+
+<title>扇贝Chrome扩展属性设置</title>
+</head>
+<body>
+	<div id="wrapper" style="text-align: center;">
+		<div id="body"
+			style="text-align: left; width: 500px; left; margin-left: auto; margin-right: auto;">
+			<h1>扇贝Chrome扩展属性设置</h1>
+			<div id="selection">
+				<input id="selection_global_enabled" type="checkbox" /><label>开启划词搜索</label>
+				<input id="selection_global_ctrlmask" type="checkbox" /><label>开启Ctrl取词</label>
+				<div class="engine">
+					<input id="selection_shanbaydict_enabled" type="checkbox" /><label>启用扇贝词典</label>
+					<div id="selection_shanbaydict">
+						<input id="selection_shanbaydict_autoadd" type="checkbox" /><label>自动添加单词</label>
+						<input id="selection_shanbaydict_autoplay" type="checkbox" /><label>自动播放读音</label>
+					</div>
+				</div>
+				<div class="engine">
+					<input id="selection_googletran_enabled" type="checkbox" /><label>启用谷歌翻译</label>
+					<div id="selection_googletran"></div>
+				</div>
+				<div class="engine">
+					<input id="selection_wikizh_enabled" type="checkbox" /><label>启用维基百科</label>
+					<div id="selection_wikizh"></div>
+				</div>
+				<div class="engine">
+					<input id="selection_wikien_enabled" type="checkbox" /><label>启用维基英文</label>
+					<div id="selection_wikien"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

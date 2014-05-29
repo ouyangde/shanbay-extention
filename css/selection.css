@@ -1,0 +1,96 @@
+.shanbay_extension_result {
+	position: absolute;
+	display: none;
+	z-index: 2147483647;
+	width: 500px;
+	overflow: hidden;
+	font-family: Times, Georgia, serif;
+	font-size: 14px;
+	color: black;
+	text-align: left;
+	vertical-align: middle;
+	background-color: white;
+	border: solid 1px #209E85;
+	box-shadow: 2px 2px 10px #209E85;
+}
+
+.shanbay_extension_popover {
+  position: absolute;
+  display: none;
+  z-index: 2147483647;
+  width: 500px;
+  overflow: hidden;
+  padding: 1px;
+  text-align: left;
+  background-color: #ffffff;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+}
+
+
+.shanbay_extension_result_engine {
+	
+}
+
+.shanbay_extension_result_caption {
+	height: 25px;
+	background-color: #f7f7f7;
+	font-size: 14px;
+	padding-left: 3px;
+}
+
+.shanbay_extension_result_caption t6 {
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 3px;
+}
+
+.shanbay_extension_result_caption span {
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.shanbay_extension_result_caption a,.shanbay_extension_result_caption a:link,.shanbay_extension_result_caption a:visited,.shanbay_extension_result_caption a:hover,.shanbay_extension_result_caption a:active
+	{
+	text-decoration: none;
+	color: #0645AD;
+	font-size: 12px;
+	text-shadow: none;
+	cursor: pointer;
+}
+
+.shanbay_extension_result_content {
+	font-size: 14px;
+	padding: 6px;
+	overflow: hidden;
+}
+
+.shanbay_extension_result_content * {
+	margin: 0px;
+	border: 0px;
+}
+
+.retention-progress {
+  height: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+.retention-progress .retention-reviewed {
+  height: 20px;
+  background-color: #209E85;
+}
+.retention-progress .retention-reviewed .bar {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
