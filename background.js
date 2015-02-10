@@ -4,7 +4,7 @@ function onClick(info, tab){
 var id = chrome.contextMenus.create({
 	"title" : "使用扇贝查词",
     	"onclick" : onClick,
-    	"contexts" : ["selection"]
+    	"contexts" : ["selection","frame"]
 }, function(){
 	console.log("Menu created");
 });

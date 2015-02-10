@@ -362,6 +362,7 @@ $("body").ready(function() {
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	  console.log(request);
 	  if (typeof request.querySelect != 'undefined') {
+		  if (request.querySelect.pageUrl != location.href) return;
 		  ShanbayChromeExtension.onQuery(request.querySelect.selectionText);
 	  }
 	  else if (typeof request.query != 'undefined') {
