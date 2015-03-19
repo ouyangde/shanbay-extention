@@ -9,6 +9,19 @@ var id = chrome.contextMenus.create({
 	console.log("Menu created");
 });
 
+function pass_ajax(option, sendResponse)
+{
+	option.success = function(data) {
+		sendResponse({status: 'success', data: data});
+	};
+	option.error = function(xhr, type, cause) {
+		xhr = {status: xhr.status};
+		sendResponse({status: 'error', xhr: xhr, type: type, cause: cause});
+	};
+	$.ajax(option);
+	return true;
+}
+
 /*
  * 用来绑定获取参数的监听器(后台页面)。
  */
@@ -16,6 +29,8 @@ var id = chrome.contextMenus.create({
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.action == "getOptions")
     sendResponse(JSON.parse(localStorage.options));
+  else if(request.action == "ajax")
+	return pass_ajax(request.option, sendResponse);
   else
     sendResponse({});
 });

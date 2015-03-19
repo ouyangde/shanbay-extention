@@ -1,6 +1,6 @@
 {
    "background": {
-	   "scripts": ["background.js"]
+	   "scripts": ["js/jquery-1.7.1.min.js", "background.js"]
    },
    "browser_action": {
       "default_icon": "icon_48.png",
@@ -9,7 +9,7 @@
    "content_scripts": [ {
       "all_frames": true,
       "css": [ "css/selection.css" ],
-      "js": [ "js/jquery-1.7.1.min.js", "js/selection.js", "js/engines.js" ],
+      "js": [ "js/jquery-1.7.1.min.js", "js/tool.js", "js/selection.js", "js/engines.js" ],
       "matches": [ "\u003Call_urls\u003E" ]
    } ],
    "description": "\u6247\u8D1D\u7F51\u67E5\u8BCDChrome\u6269\u5C55\uFF0C\u67E5\u8BCD\u66F4\u65B9\u4FBF\u3002",
@@ -23,5 +23,5 @@
    "options_page": "options.html",
    "permissions": [ "cookies", "contextMenus", "notifications", "http://*.shanbay.com/*", "http://media.17bdc.com/*" ],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "0.3.1.4"
+   "version": "0.3.1.5"
 }

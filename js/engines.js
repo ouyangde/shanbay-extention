@@ -185,26 +185,26 @@ ShanbayChromeExtension._engineMeta = ShanbayChromeExtension._engineMeta
             $("#" + this.audioId)[0].play();
           },
           add : function() { //添加单词
-            $.post(this.urlAdd, {id: this.voc_id, content_type: "vocabulary"}, this.$bind("addCallback"));
+            ajax_post(this.urlAdd, {id: this.voc_id, content_type: "vocabulary"}, this.$bind("addCallback"));
             return [
                 $().add(this.getTitle(this.result, false)).add(
                     this.$$generateTip("添加中...")), null ]
           },
 		  forgot : function() {
-            $.ajax({
+            ajax({
 				type: "PUT",
 			    url: this.urlForgot.replace("{{id}}", this.learning_id),
-			    data:{retention: 1},
-				success: this.$bind("forgotCallback")});
+			    data:{retention: 1}},
+				this.$bind("forgotCallback"));
             return [
                 $().add(this.getTitle(this.result, false)).add(
                     this.$$generateTip("添加中...")), null ]
 		  },
 		  delete : function() {
-            $.ajax({
+            ajax({
 				type: "DELETE",
-			    url: this.urlDelete.replace("{{id}}", this.learning_id),
-				success: this.$bind("deleteCallback")});
+			    url: this.urlDelete.replace("{{id}}", this.learning_id)},
+				this.$bind("deleteCallback"));
             return [
                 $().add(this.getTitle(this.result, false)).add(
                     this.$$generateTip("删除中...")), null ]

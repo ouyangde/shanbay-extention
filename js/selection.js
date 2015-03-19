@@ -124,8 +124,9 @@ ShanbayChromeExtension._Engine = function(index, meta) {
     var url = this.url.replace("{{text}}", text);
     this.$text = text;
 
-    $.get(url, null, null, this.type).success(this.$bind("parser")).error(
-        this.$bind("_onError"));
+    //$.get(url, null, null, this.type).success(this.$bind("parser")).error(
+        //this.$bind("_onError"));
+	ajax({url:url, dataType: this.type}, this.$bind("parser"), this.$bind("_onError"));
   }
 
   //转换查询结果并展示在自己的div中
