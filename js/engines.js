@@ -448,3 +448,4 @@ ShanbayChromeExtension._engineMeta = ShanbayChromeExtension._engineMeta
                     this.$text));
           }
         } ]);
+init();

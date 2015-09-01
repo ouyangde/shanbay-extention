@@ -355,7 +355,9 @@ ShanbayChromeExtension.queryAndShow = function(text, options) {
   }
 }
 
-$("body").ready(function() {
+//$("body").ready(function() {
+var init = function() {
+	if (window != top) return;
   ShanbayChromeExtension.initialize();
   $("body").mouseup(function(event) {
 	  ShanbayChromeExtension.onSelect(event);
@@ -363,11 +365,12 @@ $("body").ready(function() {
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	  console.log(request);
 	  if (typeof request.querySelect != 'undefined') {
-		  if (request.querySelect.pageUrl != location.href) return;
+		  //if (request.querySelect.pageUrl != location.href) return;
+		  if (window != top) return;
 		  ShanbayChromeExtension.onQuery(request.querySelect.selectionText);
 	  }
 	  else if (typeof request.query != 'undefined') {
 		  ShanbayChromeExtension.onQuery(request.query);
 	  }
   }); 
-});
+};
