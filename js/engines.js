@@ -137,9 +137,9 @@ ShanbayChromeExtension._engineMeta = ShanbayChromeExtension._engineMeta
 			this.voc_id = result.data.id;
 	      // 根据设置决定是否自动播放读音  :Tiao Lims
               var caption = this.getTitle(result,this.$option.autoplay);
-
-            if (!result.data.learning_id) {
               this.result = result;
+            if (!result.data.learning_id) {
+
 
               if (this.$option.autoadd) { //自动添加
                 caption = this.add()[0];
