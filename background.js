@@ -1,5 +1,5 @@
 function onClick(info, tab){
-	chrome.tabs.query({active:true}, function(e) {
+	chrome.tabs.query({active:true,currentWindow: true}, function(e) {
 		if (e.length) {
 			chrome.tabs.sendMessage(e[0].id, {querySelect:info}, function(data) {});
 		}
